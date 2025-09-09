@@ -147,5 +147,114 @@
           <!-- CART END -->
         </div>
 
+    <!-- Trees related information End-->
+
+        <!-- MODAL -->
+
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box">
+            <div id="modal-container"></div>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+      </section>
+
+      <!-- About the Campaign section -->
+      <section class="campaign w-11/12 mx-auto pb-14">
+        <h1 class="text-center my-5 text-3xl font-bold">About the Campaign</h1>
+        <div
+          class="campaign-container flex flex-col md:flex-row items-center gap-5"
+        >
+          <div class="campaign-img md:w-1/2">
+            <img src="./assets/about.png" alt="campaign image" />
+          </div>
+
+          <div class="campaign-des md:w-1/2">
+            <p>
+              Green Earth is a global tree plantation initiative dedicated to
+              fighting climate change. Since our start, we’ve planted over
+              500,000 trees worldwide. By joining our campaign, you help restore
+              forests, create habitats for wildlife, and combat global warming.
+            </p>
+            <ul class="list-disc my-3 px-3 sm:px-0">
+              <li>Restoration of natural habitats</li>
+              <li>Improvement of air quality</li>
+              <li>Support for local communities</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Impact section -->
+      <section class="impact bg-[#cff0dc] py-20">
+        <h1 class="text-3xl font-bold text-center">Our Impact</h1>
+        <div
+          class="impact-container mt-5 w-11/12 mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-5"
+        >
+          <div class="card bg-white">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-[#166534] font-bold text-2xl">
+                500K+
+              </h2>
+              <p>Trees Planted</p>
+            </div>
+          </div>
+          <div class="card bg-white">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-[#166534] font-bold text-2xl">120+</h2>
+              <p>Communities Involved</p>
+            </div>
+          </div>
+          <div class="card bg-white">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-[#166534] font-bold text-2xl">30+</h2>
+              <p>Countries Reached</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Main End -->
+    <!-- Footer Start -->
+    <footer class="bg-[#166534]">
+      <div class="flex justify-center">
+        <div class="footer-content max-w[650px] my-10">
+          <h1 class="text-white text-center text-2xl font bold mb-8">
+            Plant a Tree Today
+          </h1>
+          <div class="">
+            <form class="fieldset bg-[#15803D] rounded-box w-xs p-4">
+              <input type="text" class="input" placeholder="Your Name" />
+              <input
+                type="text"
+                class="input"
+                placeholder="Your Email Address"
+              />
+              <select class="select">
+                <option disabled selected>Number of Trees</option>
+                <option>1 tree 5$</option>
+                <option>2 tree 9$</option>
+                <option>3 tree 13$</option>
+              </select>
+              <button class="btn bg-[#facc15] rounded-full mt-4">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#14532d] py-3">
+        <p class="text-center text-white">
+          © 2025 Green Earth. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Script File -->
     <script src="tree.js"></script>
-   </body>     
+  </body>
+</html>
+       
