@@ -69,7 +69,7 @@ const displayTrees = (plants) => {
   for (const plant of plants) {
     const { id, image, name, description, category, price } = plant;
     const div = document.createElement("div");
-    div.className = "bg-white shadow-sm p-2 card flex  flex-col h-[420px]";
+    div.className = "bg-white shadow-sm p-2 card flex flex-col h-[420px]";
 
     div.innerHTML = `
     
@@ -79,7 +79,7 @@ const displayTrees = (plants) => {
       alt="${name}" />
       </figure>
       <div class="flex-1">
-    <h2 onclick="loadDetails(${id})" class="card-title cursor-pointer mt-[10px] mb-[10px] ">
+    <h2 onclick="loadDetails(${id})" class="card-title cursor-pointer mt-[10px] mb-[10px]">
       ${name}
     </h2>
     <p>${description ? description.slice(0, 60) : "working on it"}</p>
@@ -190,7 +190,7 @@ function displayCart(trees) {
     <h2>${name}</h2>
     <h2>${price}</h2>
     </div>
-    <button onclick="filterCart(${id})" class="bg-gray-300 p-3 font-bold cursor-pointer text-xl">✕</button>
+    <button onclick="filterCart(${id})" class="bg-gray-300 p-3 font-bold cursor-pointer text-xl text-red-600">✕</button>
   `;
     cartContainer.append(div);
   }
@@ -199,7 +199,8 @@ function displayCart(trees) {
 
 function filterCart(id) {
   //   console.log(cart);
-  cart = cart.filter((el) => el.id != id);
+ cart = cart.filter((el) => el.id != id);
+
   displayCart(cart);
 }
 
