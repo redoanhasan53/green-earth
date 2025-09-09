@@ -93,3 +93,59 @@
           </button>
         </div>
       </section>
+        <!-- LOADER -->
+      <section id="loader" class="flex justify-center hidden">
+        <span class="loading loading-infinity loading-xl"></span>
+      </section>
+    </header>
+
+    <!-- Main Start -->
+    <main class="bg-[#f0fdf4]">
+      <section class="trees py-20 w-11/12 mx-auto">
+        <h2 class="text-center font-bold text-3xl">Choose Your Trees</h2>
+
+        <!-- Trees related information Start -->
+        <div class="all-information my-9 grid grid-cols-12 gap-3">
+          <!-- TREE CATEGORIES START -->
+          <div id="tree-categories" class="col-span-12 lg:col-span-2">
+            <h2 class="font-bold">categories</h2>
+            <div
+              id="categories-container"
+              class="pr-3 flex flex-wrap gap-1 lg:flex-col"
+            >
+              <div class="my-2">
+                <button
+                  id="all-trees-btn"
+                  class="btn btn-tree active lg:w-full hover:bg-green-400"
+                >
+                  All Trees
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- TREE CATEGORIES End -->
+
+          <!-- CARDS CONTAINER START -->
+          <div
+            id="tree-cards-container"
+            class="col-span-12 lg:col-span-8 grid sm:grid-cols-2 md:grid-cols-3 gap-2 items-stretch"
+          ></div>
+          <!-- CARDS CONTAINER END -->
+
+          <!-- CART START -->
+          <div class="col-span-12 lg:col-span-2 bg-white rounded px-1">
+            <h2 class="font-bold">Your Cart</h2>
+            <div id="carts-container"></div>
+            <div class="flex justify-between hidden" id="total-bal">
+              <h2 class="font-bold">Total:</h2>
+              <h2 class="font-bold">
+                <i class="fa-solid fa-bangladeshi-taka-sign"></i
+                ><span id="total">00</span>
+              </h2>
+            </div>
+          </div>
+          <!-- CART END -->
+        </div>
+
+    <script src="tree.js"></script>
+   </body>     
