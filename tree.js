@@ -69,7 +69,7 @@ const displayTrees = (plants) => {
   for (const plant of plants) {
     const { id, image, name, description, category, price } = plant;
     const div = document.createElement("div");
-    div.className = "bg-white shadow-sm p-2 card flex flex-col h-[420px]";
+    div.className = "bg-white shadow-sm p-2 card flex  flex-col h-[420px]";
 
     div.innerHTML = `
     
